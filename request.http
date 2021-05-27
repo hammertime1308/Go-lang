@@ -1,0 +1,38 @@
+GET http://localhost:8080/api/blogs
+content-type: application/json
+
+###
+GET http://localhost:8080/api/blogs/8212
+content-type: application/json
+
+###
+GET http://localhost:8080/api/blogs/1
+content-type: application/json
+
+###
+POST http://localhost:8080/api/blogs
+content-type: application/json
+
+{
+    "author":"Mandar kulkarni",
+    "title":"Sample to test post",
+    "description":"Sample blog post to check working of blog post"
+}
+
+###
+PUT http://localhost:8080/api/blogs/1
+content-type: application/json
+
+{
+    "title":"Updated title for first blog post",
+    "author":"Mitchell Clark Updated",
+    "description":"Sample description of post Updated"
+}
+
+###
+DELETE http://localhost:8080/api/blogs/783463
+content-type: application/json
+
+###
+DELETE http://localhost:8080/api/blogs/2
+content-type: application/json
